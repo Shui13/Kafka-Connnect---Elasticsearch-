@@ -1,0 +1,18 @@
+
+
+
+http post: http://<machinename>:8083/connectors
+
+Header: Content-Type: application/json
+
+Body:
+{
+ "name" : "cuppy",
+ "config" : {
+  "connector.class" : "com.aps.saywhat.SInkItConnector",
+  "tasks.max" : "1",
+  "topics" : "s6", 
+  "es.host" : "dev-anta-tools01.kendall.corp.akamai.com",
+ "index.prefix":"antarctica-akamill-"
+ }
+}
